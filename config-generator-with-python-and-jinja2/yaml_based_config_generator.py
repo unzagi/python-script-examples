@@ -1,13 +1,13 @@
 import jinja2
-import json
+import yaml
 import os
 
 template_file = "ju01.j2"
-json_parameter_file = "list.json"
+json_parameter_file = "list.yaml"
 output_directory = "_output"
 
 # read the contents from the JSON files
-print("Read JSON parameter file...")
+print("Read YAML parameter file...")
 config_parameters = json.load(open(json_parameter_file))
 
 # next we need to create the central Jinja2 environment and we will load

@@ -1,28 +1,94 @@
-hostname
-name-server-1
-name-server-2
-ntp-server
-tacacs-server
-tacacs-secret
-loopback
-wan-interface
-wan-mtu
-pri-wan-vlan
-sec-wan-vlan
-pri-wan-ip
-sec-wan-ip
-circuit-ref
-asn
-pri-wan-ip-core
-bgp-auth-key
-bgp-peer-as
-lan-1-interface
-lan-1-gateway-cidr
-
-disabled-interface
-disabled-interfaces
-
-loopback-public-ip-cidr
-lan-1-network-cidr
-rmid
-snmp-community
+[
+  {
+    "hostname": "csr01.id0000.cpe",
+    "name_server_1": "194.238.50.2",
+    "name_server_2": "194.238.50.3",
+    "ntp_server": "194.238.49.2",
+    "tacacs_server": "194.238.49.99",
+    "tacacs_secret": "$9$qmfz9CuOIctudbs2GUF3690I",
+    "loopback": "217.179.77.56",
+    "wan_interface": "10.0.0.25",
+    "pri_wan_vlan": "56",
+    "circuit_ref": "VM324234234",
+    "pri_wan_ip": "20.20.20.20",
+    "sec_wan_vlan": "99",
+    "sec_wan_ip": "10.20.20.109",
+    "asn": "5504",
+	"mtu": "1518",
+    "pri_wan_ip_core": "5.5.5.5",
+    "bgp_auth_key": "GG89dchsw7wegfw77777wqhhn",
+    "bgp_peer_as": "5505",
+    "lan_1_interface": "ge-0/0/0",
+    "lan_1_gateway_cidr": "10.23.4.254/22",
+    "interfaces": [
+      {
+        "name": "ge-0/0/1"
+      },
+      {
+        "name": "ge-0/0/2"
+      },
+      {
+        "name": "ge-0/0/3"
+      },
+      {
+        "name": "ge-0/0/4"
+      },
+      {
+        "name": "ge-0/0/5"
+      },
+      {
+        "name": "ge-0/0/7"
+      }
+      ],
+    "loopback_public_ip_cidr": "217.88.44.655",
+    "lan1_network_cidr": "10.23.4.0/22",
+    "rmid": "88888",
+    "snmp_community": "thiflonly"
+  },
+    {
+    "hostname": "csr02.id0000.cpe",
+    "name_server_1": "194.238.50.2",
+    "name_server_2": "194.238.50.3",
+    "ntp_server": "194.238.49.2",
+    "tacacs_server": "194.238.49.99",
+    "tacacs_secret": "$9$qmfz9CuOIctudbs2GUF3690I",
+    "loopback": "217.22.77.56",
+    "wan_interface": "10.0.0.25",
+    "pri_wan_vlan": "56",
+    "circuit_ref": "VM3212334",
+    "pri_wan_ip": "30.30.20.20",
+    "sec_wan_vlan": "99",
+    "sec_wan_ip": "10.20.20.109",
+    "asn": "5504",
+	"mtu": "1518",
+    "pri_wan_ip_core": "5.5.5.5",
+    "bgp_auth_key": "GG89dchsw7wegfw77777wqhhn",
+    "bgp_peer_as": "5505",
+    "lan_1_interface": "ge-0/0/0",
+    "lan_1_gateway_cidr": "10.23.4.254/22",
+    "interfaces": [
+      {
+        "name": "ge-0/0/1"
+      },
+      {
+        "name": "ge-0/0/2"
+      },
+      {
+        "name": "ge-0/0/3"
+      },
+      {
+        "name": "ge-0/0/4"
+      },
+      {
+        "name": "ge-0/0/5"
+      },
+      {
+        "name": "ge-0/0/7"
+      }
+      ],
+    "loopback_public_ip_cidr": "217.88.44.655",
+    "lan1_network_cidr": "10.23.4.0/22",
+    "rmid": "88888",
+    "snmp_community": "thiflonly"
+  }
+]
